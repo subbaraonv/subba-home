@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#17201d">
+    <meta name="description" content="Archived COVID-19 prediction table and reference links.">
+    <title>COVID-19 Predictions | N V Subba Rao</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #17201d;
+        --muted: #65706b;
+        --paper: #f4f0e8;
+        --white: #fffefa;
+        --line: #d5d1c8;
+        --green: #0d6b4d;
+        --coral: #ef6a50;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      main {
+        width: min(880px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 72px 0;
+      }
+      .back {
+        color: var(--green);
+        font-weight: 700;
+        text-decoration: none;
+      }
+      h1 {
+        margin: 30px 0 12px;
+        font-size: clamp(40px, 8vw, 72px);
+        line-height: 1;
+      }
+      .intro { color: var(--muted); margin-bottom: 36px; }
+      .card {
+        overflow-x: auto;
+        background: var(--white);
+        border: 1px solid var(--line);
+        padding: clamp(20px, 5vw, 42px);
+      }
+      table { width: 100%; border-collapse: collapse; }
+      th, td {
+        padding: 14px 12px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+      }
+      th { color: var(--green); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+      .actual {
+        margin: 28px 0;
+        padding: 22px;
+        border-left: 4px solid var(--coral);
+        background: var(--white);
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .links { display: flex; flex-wrap: wrap; gap: 12px; }
+      .links a {
+        color: var(--green);
+        background: var(--white);
+        border: 1px solid var(--line);
+        padding: 10px 14px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .links a:hover, .back:hover { color: var(--coral); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="/">&larr; Portfolio</a>
+      <h1>C-19 Predictions</h1>
+      <p class="intro">An archived prediction table and reference links from the COVID-19 pandemic.</p>
+
+      <div class="card">
+        <table>
+          <thead>
+            <tr><th>Dota Noob</th><th>Count</th><th>Correct</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Khushdeep</td><td>90,000</td><td>&mdash;</td></tr>
+            <tr><td>Venugopal</td><td>150,000</td><td>&mdash;</td></tr>
+            <tr><td>Subbarao</td><td>200,000</td><td>&mdash;</td></tr>
+            <tr><td>Aditya</td><td>2,000,000</td><td>&mdash;</td></tr>
+            <tr><td>Mridul</td><td>3,161,400</td><td>Mostly (looks pretty calculated)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="actual">Actual: approximately 7,000,000 deaths.</p>
+
+      <nav class="links" aria-label="COVID-19 references">
+        <a href="https://www.covid19india.org/" rel="noreferrer">COVID-19 India</a>
+        <a href="https://en.wikipedia.org/wiki/Coronavirus_disease_2019" rel="noreferrer">Coronavirus Wiki</a>
+        <a href="https://coronavirus.jhu.edu/map.html" rel="noreferrer">Johns Hopkins Map</a>
+      </nav>
+    </main>
+  </body>
+</html>
